@@ -110,3 +110,7 @@ else:
 The result of the task C is the same as in TaskB.
 BUT: Solve the same task with a while-loop.
 
+Important:
+Copy your solution for Task A, B and C into the text box below.
+The different parts of these 3 tasks (Task A, Task B and Task C) must be clearly labeled in the text box below.
+-> In short: It must be very clear, which code belongs to which task (use comments, titles, lables, etc.)
