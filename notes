@@ -2,3 +2,14 @@ notes
 
 
 1. Write a Python program to convert JSON data to Python object. 
+
+
+import json
+python_dict =  {"name": "David", "age": 6, "class":"I"}
+python_list =  ["Red", "Green", "Black"]
+python_str =  "Python Json"
+python_int =  (1234)
+python_float =  (21.34)
+python_T =  (True)
+python_F =  (False)
+python_N =  (None)
