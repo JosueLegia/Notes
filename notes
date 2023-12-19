@@ -109,7 +109,7 @@ print(fixMatrix(missingEl2))
 Important:
 Copy your whole solution into the text box below.
 
-#4 Tasks to solve:
+#4 Tasks to solve: 2
 Create the class MyStr which extends the built-in class str with a property wordCount that returns the word count of the string.
  
 Note:
