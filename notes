@@ -36,3 +36,7 @@ Program a function isIterable(object)-> bool that proves if the passed object is
 Call the function isIterable(...) with the following short python script:
 dsm = DownSizeMutable(70, 7)
 print(isIterable(dsm))
+
+
+ggg
+
