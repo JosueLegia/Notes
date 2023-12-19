@@ -74,3 +74,39 @@ Demonstrate with a for-loop that the object dsm  is iterable. Save the values
 of DownSizeMutable(70, 7) in a list with the name myList.
 Print out the content of myList.
 The printed result will be:  [70, 63, 56, 49, 42, 35, 28, 21, 14, 7]
+
+class DownSizeMutable:
+    def __init__(self, start, downsize=1):
+        self.current = start
+        self.downsize = downsize
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.current <= 0:
+            raise StopIteration
+        else:
+            self.current -= self.downsize
+            return self.current + self.downsize
+
+# Function to check if an object is iterable
+def isIterable(obj) -> bool:
+    try:
+        iter(obj)
+        return True
+    except TypeError:
+        return False
+
+# Create an instance of DownSizeMutable
+dsm = DownSizeMutable(70, 7)
+
+# Check if the object is iterable
+if isIterable(dsm):
+    # Use a for-loop to iterate over the object and save values in myList
+    myList = [value for value in dsm]
+
+    # Print the content of myList
+    print(myList)
+else:
+    print("Object is not iterable.")
