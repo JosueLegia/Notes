@@ -110,3 +110,9 @@ if isIterable(dsm):
     print(myList)
 else:
     print("Object is not iterable.")
+
+
+    Task C:
+The result of the task C is the same as in TaskB.
+BUT: Solve the same task with a while-loop.
+
