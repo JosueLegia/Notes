@@ -37,11 +37,6 @@ Call the function isIterable(...) with the following short python script:
 dsm = DownSizeMutable(70, 7)
 print(isIterable(dsm))
 
-<<<<<<< HEAD
-
-ggg
-
-=======
 def isIterable(obj) -> bool:
     try:
         iter(obj)
@@ -67,7 +62,6 @@ class DownSizeMutable:
 # Test the function with an instance of DownSizeMutable
 dsm = DownSizeMutable(70, 7)
 print(isIterable(dsm))
->>>>>>> e24ce3e2e499cf30f95f7d206603c32b795fd62a
 
 Task B:
 Demonstrate with a for-loop that the object dsm  is iterable. Save the values
