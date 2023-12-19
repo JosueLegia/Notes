@@ -13,3 +13,26 @@ python_float =  (21.34)
 python_T =  (True)
 python_F =  (False)
 python_N =  (None)
+
+
+Given is following class:
+class DownSizeMutable:
+    def __init__(self, start, downsize = 1):
+        self.current = start
+        self.downsize = downsize
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.current <= 0:
+            raise StopIteration
+        else:
+            self.current -= self.downsize
+            return self.current + self.downsize
+Tasks A:
+Think about: Are objects of the class DownSizeMutable 'iterable'? Answer: YES!!!
+Program a function isIterable(object)-> bool that proves if the passed object is iterable.
+Call the function isIterable(...) with the following short python script:
+dsm = DownSizeMutable(70, 7)
+print(isIterable(dsm))
