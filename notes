@@ -68,3 +68,43 @@ logger = Logger('log.txt')
 logger.add_entry('First entry.')
 logger.add_entry('Second entry.')
 logger.add_entry('The PDS MEP is running!')
+
+
+#2 The given 2D list contains some empty (NA = no value is available) elements. Write a function called fixMatrix(....) that locates missing elements and fills them up by linear interpolation of the previous and next (adjacent = benachbart) elements in the same row. So, if the element E22 is missing for instance, it has to be filled up using the following formula:
+E22 = (E21+E23)/2
+The 2D list looks like:
+[[E00, E01, E02, E03],
+ [E10, E11, E12, E13],
+ [E20, E21, E22, E23],
+ [E30, E31, E32, E33]]
+  
+Tasks to solve:
+Program a function fixMatrix(...) with the following rules for edge conditions:
+If there is no previous element (i.e. the missing element is the first of the row) use the last element of previous row. Example: E10 = (E03+E11)/2
+If there is no next element (i.e. the missing element is the last of the row) use the first element of next row. Example: E23 = (E22+E30)/2
+The first element (i.e. E00) and the last element (i.e. Enn) are never 'NA's. 
+There are never multiple 'NA' next to each other (=nebeneinander).
+ 
+Write the function as generic as possible and try it with the following two 2D lists:
+missingEl1 = [[   1,'NA',   3,   4],
+              ['NA',   6,'NA',   8],
+              [   9,  10,  11,  12],
+              [  13,'NA',  15,  16]]
+ 
+missingEl2 = [[   1,'NA',   3,   4,   5],
+              [  11,'NA',  13,  14,'NA'],
+              [  21,  22,'NA',  24,  25],
+              [  31,  32,  33,'NA',  35],
+              ['NA',  42,  43,  44,  45],
+              ['NA',  52,'NA',  54,  55]]
+ 
+Some Code Hints:
+def fixMatrix(matrix):
+    rows = len(matrix)           # number of rows
+    cols = len(matrix[0])        # number of cols
+    ...
+print(fixMatrix(missingEl1))
+print(fixMatrix(missingEl2))
+ 
+Important:
+Copy your whole solution into the text box below.
