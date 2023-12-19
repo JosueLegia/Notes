@@ -68,3 +68,9 @@ class DownSizeMutable:
 dsm = DownSizeMutable(70, 7)
 print(isIterable(dsm))
 >>>>>>> e24ce3e2e499cf30f95f7d206603c32b795fd62a
+
+Task B:
+Demonstrate with a for-loop that the object dsm  is iterable. Save the values
+of DownSizeMutable(70, 7) in a list with the name myList.
+Print out the content of myList.
+The printed result will be:  [70, 63, 56, 49, 42, 35, 28, 21, 14, 7]
