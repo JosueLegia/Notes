@@ -41,3 +41,30 @@ logger.add_entry('The PDS MEP is running!')
 Important:
 Copy your whole solution (with the 'logger test script') into the text box below.
 Copy also the content of your generated 'log.txt' File on the end of your solution. 
+
+#1
+class Logger:
+    def __init__(self, filename):
+        self.filename = filename
+        self.entry_number = 1  # Initial entry number
+
+        # Create an append-only file and write the header
+        with open(self.filename, 'a') as file:
+            file.write("Log Entries:\n")
+
+    def add_entry(self, message):
+        # Format the entry number with a minimum of 5 characters and enclosed in square brackets
+        formatted_entry = f"[{self.entry_number:5}] {message}\n"
+
+        # Append the entry to the file
+        with open(self.filename, 'a') as file:
+            file.write(formatted_entry)
+
+        # Increment the entry number for the next log entry
+        self.entry_number += 1
+
+# Logger test script
+logger = Logger('log.txt')
+logger.add_entry('First entry.')
+logger.add_entry('Second entry.')
+logger.add_entry('The PDS MEP is running!')
