@@ -26,3 +26,9 @@ waja wahja
 
 hey this is the exercise: 
 ggdhdgdkjsbncjshd
+
+
+
+# Example of a for loop
+for i in range(5):
+    print(i)
