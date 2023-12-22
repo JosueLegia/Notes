@@ -9,6 +9,13 @@ length = calculate_string_length(input_string)
 print("Length of the string:", length)
 
 
+
+gggg
+
+
+
+
+
 def count_character_frequency(string):
     char_count = {}
 
@@ -20,6 +27,11 @@ def count_character_frequency(string):
 
     return char_count
 
+
+
+
+ggg
+
 def swap_first_two_chars(string1, string2):
     if len(string1) < 2 or len(string2) < 2:
         return string1 + ' ' + string2
@@ -29,6 +41,8 @@ def swap_first_two_chars(string1, string2):
     result = modified_string1 + ' ' + modified_string2
 
     return result
+
+gggg
 
 # Example usage
 string1 = "abc"
@@ -41,6 +55,7 @@ def remove_character(string, n):
         return "Invalid index"
 
     return string[:n] + string[n+1:]
+fffffffffff
 
 # Example usage
 input_string = "Hello, World!"
@@ -48,6 +63,7 @@ index_to_remove = 7
 result = remove_character(input_string, index_to_remove)
 print("Modified string:", result)
 
+fffff
 
 def find_numbers():
     numbers = []
@@ -55,6 +71,8 @@ def find_numbers():
         if num % 7 == 0 and num % 5 == 0:
             numbers.append(num)
     return numbers
+
+ffff
 
 # Example usage
 result = find_numbers()
@@ -68,8 +86,14 @@ def remove_character(string, n):
     
         return string[:n] + string[n+1:]
 
+
+ffffff
+
 # Example usage
 input_string = "567896996"
 index_to_remove = 7
 result = remove_character(input_string, index_to_remove)
 print("Modified string:", result)
+
+
+fffffff
