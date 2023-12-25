@@ -14,7 +14,8 @@ def is_palindrome(s):
 # Test the function
 word = "radar"
 result = is_palindrome(word)
-print(f"{word} is a palindrome: {result}")
+print(f"{word} is a palindrome
+      : {result}")
 
 
 hfhudhfuhf
@@ -48,3 +49,5 @@ chuchucrhcruhcru
 word = "radar"
 result = is_palindrome(word)
 print(f"{word} is a palindrome: {result}")
+
+jrjkrkrfkfkr

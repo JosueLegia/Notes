@@ -1,0 +1,7 @@
+{
+    "editor.glyphMargin": false,
+    "diffEditor.renderMarginRevertIcon": false,
+    "css.lint.propertyIgnoredDueToDisplay": "ignore",
+    "less.lint.propertyIgnoredDueToDisplay": "ignore",
+    "scss.lint.propertyIgnoredDueToDisplay": "ignore"
+}
