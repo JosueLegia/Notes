@@ -8,6 +8,14 @@ def is_palindrome(s):
 word = "radar"
 print(f"1. {word} is a palindrome: {is_palindrome(word)}")
 
+ return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Test the prime nu
+
 # Exercise 2: Factorial Calculator
 def factorial(n):
     if n == 0 or n == 1:
@@ -18,6 +26,14 @@ def factorial(n):
 # Test the factorial function
 number = 5
 print(f"2. The factorial of {number} is: {factorial(number)}")
+
+ return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Test the prime nu
 
 # Exercise 3: Prime Number Checker
 def is_prime(num):
@@ -32,13 +48,37 @@ def is_prime(num):
 num_to_check = 17
 print(f"3. {num_to_check} is a prime number: {is_prime(num_to_check)}")
 
+ return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Test the prime nu
+
 # Exercise 4: List Comprehension
 # Generate a list of squares for numbers from 1 to 5
 squares = [x**2 for x in range(1, 6)]
 print(f"4. List of squares: {squares}")
 
+ return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Test the prime nu
+
 # Exercise 5: String Manipulation
 # Convert a string to uppercase and print the result
 original_string = "hello, world!"
 uppercase_string = original_string.upper()
+
+ return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Test the prime nu
 print(f"5. Uppercase string: {uppercase_string}")
