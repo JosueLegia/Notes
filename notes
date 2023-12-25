@@ -1,4 +1,4 @@
-notes
+notes g
 
 def calculate_string_length(string):
     return len(string)
