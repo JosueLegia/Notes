@@ -1,4 +1,4 @@
-this is 444 #3#4 #rr
+this is 444 #3#4 #rr#s
 
 # Exercise 1: Palindrome Checker
 def is_palindrome(s):
